@@ -73,7 +73,7 @@ while True:
             print(f'No student available with ID : {sid}')
         except e.InvalidNameError:
             print('Name consists only Alphabets in range of 3 to 10')
-        except e.InvalidAgeError, ValueError:
+        except (e.InvalidAgeError, ValueError):
             print('Age should be integer and in range of 5 and 60')
         except e.InvalidCourseError:
             print('Course name should consists only Alphabets in range of 3 to 10')
